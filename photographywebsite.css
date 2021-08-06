@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 7000px;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 60px;
+}
+
+    .navbar li {
+        position: relative;
+        display: inline-block;
+        float: right;
+        background-color: #000000;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 20px; 
+    }
+
+        .navbar li:hover {
+            background-color: rgb(87, 86, 86);
+            color: rgb(255, 255, 255);
+            transition: 0.35s;
+        }
+
+.intropic img {
+    position: relative;
+    width: 1280px;
+    height: 643px;
+    filter: grayscale(100%);
+    top: 10px;
+}
+
+    .intropic img:hover {
+        filter: grayscale(0%);
+        transition: 0.5s;
+    }
+
+.textblock {
+    position: absolute;
+    background-color: rgb(95, 94, 95);
+    padding: 40px;
+    bottom: 70px;
+    left: 85px;
+    filter: opacity(35%);
+}
+
+.textblock p {
+    color: white;
+}
+
+.textblock:hover {
+    background-color: rgb(77, 73, 116);
+    color: black;
+    transition: 0.15s;
+}
+
+.textblock:hover p {
+    color: white;
+}
+
+.photos img:hover {
+    z-index: 2;
+    transform-style: ease;
+    transform: translate(0px,-20px);
+    transform: scale(1.2);
+    filter: brightness(50%);
+    filter: drop-shadow(4px 4px 3px rgb(87, 86, 86)); 
+}
+
+.center {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    top: 80px;
+    left: 475px;
+}
+
+.left {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    top: 80px;
+    right: 220px;
+}
+
+.right {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    top: 80px;
+    left: 251px;
+}
+
+.center2 {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    top: 160px;
+    left: 320px;
+}
+
+.left2{
+    position: relative;
+    height: 350px;
+    width: 180px;
+    right: 545px;
+    top: 135px;
+}
+
+.right2 {
+    position: relative;
+    height: 350px;
+    width: 180px;
+    top: 135px;
+    left: 215px;
+}
+
+.layer31 {
+    position: relative;
+    width: 485px;
+    height: 310px;
+    top: 230px;
+    left: 70px;
+}
+
+.layer32{
+    position: relative;
+    width: 480px;
+    height: 310px;
+    top: 230px;
+    left: 215px;
+}
+
+.layer41 {
+    position: relative;
+    height: 410px;
+    width: 300px;
+    top: 300px;
+    left: 475px;
+}
+
+.layer42 {
+    position: relative;
+    height: 275px;
+    width: 235px;
+    left: 585px;
+    top: 165px;
+}
+
+.layer43 {
+    position: relative;
+    height: 410px;
+    width: 315px;
+    top: 300px;
+    right: 475px;
+}
+
+.layer51 {
+    position: relative;
+    height: 360px;
+    width: 300px;
+    top: 610px;
+}
+
+.layer52 {
+    position: relative;
+    height: 400px;
+    width: 575px;
+    top: 370px;
+    left: 135px;
+}
+
+.popup .overlay {
+    position: relative;;
+    top:500px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+   
+  button {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:15px;
+    font-size:18px;
+    border:2px solid #222;
+    color:#222;
+    text-transform:uppercase;
+    font-weight:600;
+    background:#fff;
+  }
